@@ -1,0 +1,12 @@
+GAS LISTING prog2adi.s 			page 1
+
+
+DEFINED SYMBOLS
+          prog2adi.s:2      *ABS*:0000000000000002 getChar
+          prog2adi.s:3      *ABS*:0000000000000003 putChar
+          prog2adi.s:6      .text:0000000000000000 main
+          prog2adi.s:7      .text:0000000000000000 do
+          prog2adi.s:17     .text:000000000000001c while
+          prog2adi.s:20     .text:0000000000000030 end
+
+NO UNDEFINED SYMBOLS

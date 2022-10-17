@@ -1,0 +1,86 @@
+1. 	a) Os switches têm memória, ao contrário do hub, e desta forma consegue guardar a que 
+terminais, após, por exemplo, por flooding, recolhem informação e conseguem criar uma tabela
+de switching, estas funcionalidades faz com que diminua as colisões
+	   No outro caso, os switches não param os broadcast, o que vai levar
+a um congestionamento da rede e um ligeiro atraso
+
+	b) O mecanismo GO BACK N não tem tanta rapidez como o SELECTIVE REPEAT, quando enviam
+pacotes, nao tem memoria para guardar o pacote, e caso exista erro, haverá uma grande perda
+de tempo o que faz com que este mecanismo seja menos eficaz, por esta razão optava por um
+selective repeat, que é uma versao melhorada do GO BACK N
+
+	c) O switch é mais eficaz, dá menos trabalho visto que não é necessario configurar, 
+e este também é mais rapido que o router, logo optaria por um switch
+
+	d) NAT Estático: Um endereço privado é traduzido para um ip publico
+	   NAT Dinâmico: Existe um conjunto de endereços públicos (pool) que as máquinas privadas
+podem usar
+	   Posto isto, não é vantajoso o usar o NAT Estático pois pode-se tornar-se inseguro
+
+
+PARTE 2
+
+1. JA FAÇO
+
+2. DOWN
+
+3. utlizando uma gateway para o isp?
+
+4. 	
+	1. Editar o ficheiro named.conf.local localizado no diretório /etc/bind/ e criar
+a zona consoante o dominio que o utilizador decida escolher
+	2. Criar o ficheiro db."nome do dominio".pt e colocá-lo no diretorio /etc/bind/
+com as definições do dns
+	3. Verificar se as zonas estão corretamente construidas com o comando "named-checkzone"
+"nome do dominio" e o respetivo ficheiro db criado no ponto 2
+	4. Dar restart no DNS
+	5. Finalize e confirme com um nslookup com o endereço do seu dominio, e os que escolheu
+no ficheiro db."nome do dominio".pt
+
+5. Através dos subdominios criados no registo SOA do DNS server
+
+6. 	MSS = 1000 bytes
+	Sequence Number = 0
+	CWND = 10000 bytes 
+	RWND = 64000 bytes
+
+START:
+	Sequence Number (SQ) = 0, 		  SYN 		#flag é o SYN; usa um SQ aleatorio, neste caso é 0
+			SQ = 0, AK = SQ + 1 = 1, SYN/ACK 
+	SQ = 1, AK = 1 ,			  ACK
+
+DATA:
+	data = MSS = 1000 SQ = 1 AK = 1
+			SQ = 1 AK = 1001	  ACK
+
+	data = MSS = 1000 SQ = 1001 AK = 1
+			SQ = 1 AK = 2001	  ACK
+
+	data = MSS = 1000 SQ = 2001 AK = 1
+			SQ = 1 AK = 3001	  ACK
+
+	data = MSS = 1000 SQ = 3001 AK = 1
+			SQ = 1 AK = 4001	  ACK
+
+	data = 230 SQ = 4001 AK = 1
+			SQ = 1 AK = 4231	  ACK
+
+END:
+	SQ = 4231, 				  FYN		
+			SQ = 1, AK = 4232	  ACK
+		
+			SQ = 1 			  FYN
+	SQ = 4232, AK = 2			  ACK
+		
+
+	b) Como estamos a falar de TCP, após 3 packets duplicados de ack ou passado um certo
+periodo de tempo, este vai reconhecer que os pacotes foram perdidos, e após isto este repõe
+a ordem e volta ao pacote que necessita enviar
+	  Além disso, como estamos presentes dum caso de TCP Reno, o CWND vai ser igual a metade
+CWND/2, modelo de reno
+
+7. CATRAPUMBA
+
+	b) Pasta de html mal criada, url errado ou entao colocado no diretorio errado conforme
+o configurado
+	

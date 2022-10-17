@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/simulation/modelsim
+Ecounterdown4
+Z1 w1652776895
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8/mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4.vhd
+Z6 F/mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4.vhd
+l0
+L5 1
+VNjC@`SkRbU3Yh6ROdaMG13
+!s100 Y;i:;aM?<dfN:o:IK^:UU2
+Z7 OV;C;2020.1;71
+33
+Z8 !s110 1652784520
+!i10b 1
+Z9 !s108 1652784520.000000
+Z10 !s90 -reportprogress|300|-2008|-work|work|/mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4.vhd|
+Z11 !s107 /mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4.vhd|
+!i113 1
+Z12 o-2008 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 12 counterdown4 0 22 NjC@`SkRbU3Yh6ROdaMG13
+!i122 0
+l15
+L13 17
+VKmYOJSTMRR0GDWGh:z3IN3
+!s100 SnVM]3Ib>bhH3SiFGE<8l0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecounterdown4_tb
+Z15 w1652784499
+R3
+R4
+!i122 1
+R0
+Z16 8/mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4_Tb.vhd
+Z17 F/mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4_Tb.vhd
+l0
+L4 1
+VKdPi`maSIHc6YX__553`o1
+!s100 VzUndP7QW[Bifoe=f5Ez60
+R7
+32
+Z18 !s110 1652784526
+!i10b 1
+Z19 !s108 1652784526.000000
+Z20 !s90 -reportprogress|300|-work|work|/mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4_Tb.vhd|
+!s107 /mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4_Tb.vhd|
+!i113 1
+Z21 o-work work
+R13
+Astimulus
+R2
+R14
+R3
+R4
+DEx4 work 15 counterdown4_tb 0 22 KdPi`maSIHc6YX__553`o1
+!i122 1
+l10
+L7 39
+VnQ<dkQDDaQdFLa1zVc:2@3
+!s100 5UECKHgOWA:Tm0n80AVBV3
+R7
+32
+R18
+!i10b 1
+R19
+R20
+Z22 !s107 /mnt/Data/004_Escola/UA/Disciplinas/LSD/Quartus/LSD_MiniProjeto/MiniProjeto/CounterDown4_Tb.vhd|
+!i113 1
+R21
+R13

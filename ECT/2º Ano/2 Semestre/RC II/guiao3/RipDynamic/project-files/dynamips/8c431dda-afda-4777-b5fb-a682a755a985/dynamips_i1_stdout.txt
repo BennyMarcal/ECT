@@ -1,0 +1,6 @@
+cygwin warning:
+  MS-DOS style path detected: C:\Users\benny\Desktop\ECT\2\xC2\xBA Ano\2 Semestre\RC II\guiao3\RipDynamic\project-files\dynamips
+  Preferred POSIX equivalent is: /cygdrive/c/Users/benny/Desktop/ECT/2\xC2\xBA Ano/2 Semestre/RC II/guiao3/RipDynamic/project-files/dynamips
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames

@@ -1,0 +1,12 @@
+1. nao deve sair
+
+2. escrever palha relacionada com switches e pc caso calhe
+
+3. tree
+
+4. é necessario uma tabela de encaminhamento de cada sw e colocarem as portas certas para mandaraem
+sinal para outro SW de layer 3
+
+5.
+
+6. que ?

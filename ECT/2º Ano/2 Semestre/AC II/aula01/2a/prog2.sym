@@ -1,0 +1,12 @@
+GAS LISTING prog2.s 			page 1
+
+
+DEFINED SYMBOLS
+             prog2.s:2      *ABS*:0000000000000002 getChar
+             prog2.s:3      *ABS*:0000000000000003 putChar
+             prog2.s:6      .text:0000000000000000 main
+             prog2.s:7      .text:0000000000000000 do
+             prog2.s:15     .text:0000000000000018 while
+             prog2.s:18     .text:000000000000002c end
+
+NO UNDEFINED SYMBOLS

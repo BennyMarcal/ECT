@@ -1,0 +1,18 @@
+GAS LISTING prog5.s 			page 1
+
+
+DEFINED SYMBOLS
+             prog5.s:1      *ABS*:000000000000000c RESET_CORE_TIMER
+             prog5.s:2      *ABS*:000000000000000b READ_CORE_TIMER
+             prog5.s:3      *ABS*:000000000000bf88 SFR_BASE_HI
+             prog5.s:4      *ABS*:0000000000006100 TRISE
+             prog5.s:5      *ABS*:0000000000006110 PORTE
+             prog5.s:6      *ABS*:0000000000006120 LATE
+             prog5.s:11     .text:0000000000000000 main
+             prog5.s:23     .text:0000000000000024 loop
+             prog5.s:40     .text:0000000000000058 delay
+             prog5.s:43     .text:000000000000005c for
+             prog5.s:51     .text:0000000000000088 endfor
+             prog5.s:46     .text:000000000000006c read
+
+NO UNDEFINED SYMBOLS

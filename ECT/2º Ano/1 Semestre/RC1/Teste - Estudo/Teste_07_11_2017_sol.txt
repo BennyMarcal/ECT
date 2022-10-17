@@ -1,0 +1,40 @@
+1. a)Existe 3 MECANISMOS DE RECUPERAÇÃO DE ERROS:	
+	-STOP-N-WAIT : Só envia o pacote depois de receber o ACK, demora mais tempo do que
+o costume porque o objetivo é enviar, não importando o tempo de demora, TFTP que usa o 
+mecanismo do UDP
+	-GO-BACK-N: Ao contrario do STOP N WAIT, ele envia o maximo que consegue enviar
+e depois recebe ack, envio a informaçao toda que consegui, como se fosse uma caixa cheia
+e so envia o ack quando repete o ciclo, TCP antigo usava 
+	-SELECTIVE REPEAT: tcp usa agora, e parecido com o GO BACK N, armazena mais informação
+e manda mais, tudo repetido, mais informaçao, mais eficaz do que GO BACK N
+
+	a) poderia escolher STOP N WAIT ou SELECTIVE REPEAT, justificar bem consoante a 
+resposta
+
+	b)MECANISMOS PRA EVITAR COLISOES:
+	-CSMA/CD: usado pra ethernet
+	-MACA: usado pra wireless - MACA é um mecanismo utilizado para minimizar as colisões
+e este é usado em wireless, este consiste no envio de dois pacotes, RTS E CTS, um terminal envia
+o RTS para outro, para verificar se o espaço/raio está a receber alguma mensagem, em resposta o
+o terminal destino envia um sinal CTS para verificar se existe algum sinal a vir de outro lado
+desta maneira minimiza as colisões e diminui as perdas de informação, e de certa forma o tempo
+também diminui.
+
+2- 	e) Para haver uma melhor organização dos endereços, dividindo em subnets por partes, apesar de 
+haver perda para broadcasts e para hostID
+
+	g) ICMP - 2000 bytes
+	   MTU  - 900 bytes
+	   ID   - 25 
+
+	MTU - CABEÇALHO = 900 - 20 (tamanho do cabeçalho) = 880 bytes
+	880 - 8 = 872 , 8 BYTES DO ICMP
+
+	id=25,	fragment offset = 0,	flag = 1	IP = 872
+	
+	id=25,	fragment offset = 880,	flag = 1	IP = 880
+
+	id=25,	fragment offset = 1760,	flag = 0	IP = 2000 - (872+880)
+
+	i) justificar DHCP, estudar DHCP bem
+

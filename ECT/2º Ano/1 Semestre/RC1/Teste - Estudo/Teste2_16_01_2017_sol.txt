@@ -1,0 +1,46 @@
+1. a) (????????)
+   b) A conectividade entre o PC A e o PC B é possivel se nos routers R1,R2,R3 houver rotas 
+definidas entre eles, pré configuradas, pelo utilizador, caso contrário não haverá qualquer tipo
+de comunicação entre eles.
+
+   c)(?????????)
+
+   d) # Não é possivel ter várias ligações em simultaneo visto que para a ligação de controlo só existe um
+porto, 21.
+
+   e) RWND = 10000 bytes
+      MTU = 1000 bytes
+      *sauce explicar	
+
+START:
+
+	SQ=20						SYN
+			
+				SQ=30, ACK = SQ + 1	SYN/ACK
+
+	SQ=21, ACK = 21					ACK
+
+FEITO NO PAPEL
+
+	f) Após a perda do 6º segmento, o PC B vai mandar de novo os 3 pacotes ACK para o pc ,
+este vai reenviar o pacote que deu erro, neste caso o 6º pacote de maneira a que não se perca nada. 
+
+-TCP Tahoe, onde recomeça num slow start e o CWND vai reduzir para 1, ou então, pode usar o TCP Reno que vai
+colocar o CWND pra metade
+
+	g) O objetivo do ARP, é através de um ip descobrir um MAC address, em semelhança com o arp, o dns
+através do ip, procura um dominio que esteja associado, ou seja, tanto o ARP como o DNS tem bastante semelhanças
+no funcionamento, ambas também têm uma tabela de endereçamentos, onde o ARP liga o IP à MAC e o DNS o IP ao dominio
+
+	h) Sem ter a certeza, mas uma maneira de diminuir o tempo de receção de informação num site, é talvez, criar
+mais dominios que permita separar tudo e fazer hiperligações que direcione tudo ao dominio raiz, que leve a novos dominios que facilite tudo e diminua o 
+tempo de receção no site
+
+	i) NAO SAI, PRAI
+
+	j)
+
+	k) 8 ---------  1
+	   x --------- 20
+	
+	x = 8 * 160 = 160 bits	   

@@ -1,0 +1,34 @@
+3. 
+	VLAN 1 - precisa de 16
+	LAN B - precisa de 50
+Mascaras:
+/24 - 255 255.255.255.0   / 255.255.255.255
+/25 - 128 255.255.255.128 / 255.255.255.255
+/26 - 64  255.255.255.192 / 255.255.255.255
+/27 - 32  255.255.255.224 / 255.255.255.255
+/28 - 16  255.255.255.240 / 255.255.255.255
+/29 - 8   255.255.255.248 / 255.255.255.255
+/30 - 4   255.255.255.252 / 255.255.255.255
+/31 - 2   255.255.255.254 / 255.255.255.255
+
+200.0.0.128/25
+LAN B:			VLAN 1:				NAT:
+200.0.0.128/26		200.0.0.192/27 -> 192-224	200.0.0.224/27
+
+8. Sequencial Number = 1200 bytes
+   CWND = 2xMSS	 
+   MSS = 1400
+   CWND = 2800
+   RWND = 1000, pc destino tem espaço pra 1000 coisas
+
+how many packages of 100 bytes ?
+
+   NACK = MSS, visto que ainda não houve nenhum ACK do outro terminal
+
+   AWND = MIN(CWND - NACK,RWND)
+        = MIN(1400,1000), escolher o mais pequeno
+        = 1000
+
+logo, 1000/100 = 10, conseguimos enviar 10 pacotes de 100 bytes
+
+					

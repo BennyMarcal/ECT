@@ -1,0 +1,97 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+-- Entidade sem portos
+entity CounterDown4_Tb is
+end CounterDown4_Tb;
+
+architecture Stimulus of CounterDown4_Tb is
+	-- Sinais para ligar às entradas da UUT
+	signal s_clk    : std_logic;
+	signal s_enable : std_logic;
+	signal s_reset  : std_logic;
+
+	-- Sinal para ligar às saídas da UUT
+	signal s_cnt : std_logic_vector(3 downto 0);
+begin
+	-- Instanciação da Unit Under Test (UUT)
+	uut : entity work.CounterDown4(Behavioral)
+		port map(
+			clk    => s_clk,
+			enable => s_enable,
+			reset  => s_reset,
+			count  => s_cnt);
+
+	--Process stim
+	stim_proc : process
+	begin
+		wait for 100 ns;
+		s_enable <= '1';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+		wait for 100 ns;
+		s_clk <= '0';
+		wait for 100 ns;
+		s_clk <= '1';
+	end process;
+end Stimulus;

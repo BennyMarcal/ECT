@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.NUMERIC_STD.all;
+
+entity MiniProjeto is
+    port(CLOCK_50 : in  std_logic;
+	      HEX0     : out std_logic_vector(6 downto 0));
+end MiniProjeto;
+
+architecture Structural of MiniProjeto is
+    signal s_enableCounterPulse : std_logic;
+	 signal s_reset : std_logic;
+begin
+
+    s_reset <= '0';
+    
+	 counterPulseGenerator : entity work.FreqDivider(Behavioral)
+	                         generic map(MAX => 25_000_000);
+	                         port map(clk   => CLOCK_50,
+									          reset => s_reset,
+					                      pulse => s_enableCounterPulse);
+	 
+end Structural;

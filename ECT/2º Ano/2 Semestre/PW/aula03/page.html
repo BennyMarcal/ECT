@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .banner { height: 600px; margin: auto;
+            background-image: url('ua.jpg') ;
+            background-position: center center ;
+            background-repeat: no-repeat ;
+            background-size: cover; }
+        ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: rgb(53, 53, 53); }
+        li { float: left; border-right: 2px solid rgb(0, 0, 0); }
+        li:last-child { border-right: none; float: right; }
+        li a { display: block; color: rgb(255, 255, 255); padding: 8px 16px; text-decoration: none; text-align: center }
+        li a:hover:not(.active) { background-color: #444; }
+        li a.active:hover { background-color: rgb(0, 0, 0); }
+        .active { background-color: rgb(255, 123, 0); }
+    </style>
+    <head>
+    </head>
+    <body>
+    <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="web.html">Parte 2</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <p></p>
+    <div class="banner"></div>
+    </body>
+</html>

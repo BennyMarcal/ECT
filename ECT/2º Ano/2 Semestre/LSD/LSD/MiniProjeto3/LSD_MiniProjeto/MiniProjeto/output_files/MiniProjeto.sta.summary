@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -3.405
+TNS   : -322.200
+
+Type  : Slow 1200mV 85C Model Setup 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : -2.181
+TNS   : -2.181
+
+Type  : Slow 1200mV 85C Model Removal 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 2.648
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -146.920
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.056
+TNS   : -285.611
+
+Type  : Slow 1200mV 0C Model Setup 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : -1.852
+TNS   : -1.852
+
+Type  : Slow 1200mV 0C Model Removal 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 2.368
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -146.920
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.135
+TNS   : -100.411
+
+Type  : Fast 1200mV 0C Model Setup 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : -0.714
+TNS   : -0.714
+
+Type  : Fast 1200mV 0C Model Removal 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : 1.426
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -122.618
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:debounceKEY1|s_pulsedOut'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

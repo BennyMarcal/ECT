@@ -1,0 +1,55 @@
+1. BADEU
+
+2. FIUPA
+
+3. Os terminais do SW 15 serao implementados no SW13 , desta forma, na tabela de encaminhamento
+vao ter os MAC iguais da porta 3
+
+4. divisao feita facil, so nao me apetece escrever, dividir em subnets
+
+5. Estes necessitam de usar NAT/PAT, este mecanismo traduz ips privados para publicos,
+ou vice versa, neste caso usamos de priv pra publico, o que destingue ambos, visto que tem 
+o mesmo ip é que este usa o PAT, os ports vao ser diferentes o que vai mudar
+
+6. SELECTIVE REPEAT, STOP N WAIT, e GO BACK N, saber isso e justificar
+
+7. FAZER AS CONTAS FACIL
+
+PARTE 2
+
+1, VLONE NAO SAI
+
+2.
+
+3. (??????)
+
+4. (??????)
+
+5. Explicar a prática, parte do DNS
+
+6. (???????)
+
+7. a) SQ IN = 2000
+MSS = 1400
+RWND = 2000
+CWND = 4200
+
+AWND = MIN(2800,2000) = MIN(CWND - MSS,RWND)
+AWND = 2000
+
+how many packages 200 bytes
+
+logo conseguimos enviar 10 pacotes de 200 bytes
+
+	b) O TCP considera um pacote perdido quando envia o pacote 3 vezes ou passa um certo
+tempo desde o seu ultimo sinal, para o retransmitir este deve voltar e repetir a ordem de onde
+deu anteriormente erro
+
+	c) SQIN = 2000	
+			ACK = 10200
+			
+	10200-2000 = 8200 data/packet enviada entre eles
+
+	no inicio, foi adicionado 1 (SYN) e como a terminação foi
+bem sucedida, então será adicionado no final tambem mais 1 (FIN), logo foram enviados 8198 bytes
+

@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Legion/Desktop/MiniProjeto/simulation/modelsim
+Ecounterdown4
+Z1 w1652779310
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8C:/Users/Legion/Desktop/MiniProjeto/CounterDown4.vhd
+Z6 FC:/Users/Legion/Desktop/MiniProjeto/CounterDown4.vhd
+l0
+L5 1
+V0a=nS5[O:nblfU[=X;TZQ3
+!s100 K5dVXmJYY4WNFg6P]zf413
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1652780237
+!i10b 1
+Z9 !s108 1652780237.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/Legion/Desktop/MiniProjeto/CounterDown4.vhd|
+Z11 !s107 C:/Users/Legion/Desktop/MiniProjeto/CounterDown4.vhd|
+!i113 1
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 12 counterdown4 0 22 0a=nS5[O:nblfU[=X;TZQ3
+!i122 1
+l15
+L13 16
+V0kJZLh5LOXZDDTi@DWA=?1
+!s100 OFC8QNU``CU4h4MTIiRhn2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecounterdown4_tb
+Z15 w1652780084
+R3
+R4
+!i122 2
+R0
+Z16 8C:/Users/Legion/Desktop/MiniProjeto/CounterDown4_Tb.vhd
+Z17 FC:/Users/Legion/Desktop/MiniProjeto/CounterDown4_Tb.vhd
+l0
+L5 1
+VYOkV:QIlIlMceAc3aZB_A0
+!s100 ;iN?7]03SfLiOeK@NgYXZ3
+R7
+32
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/Legion/Desktop/MiniProjeto/CounterDown4_Tb.vhd|
+!s107 C:/Users/Legion/Desktop/MiniProjeto/CounterDown4_Tb.vhd|
+!i113 1
+R12
+R13
+Astimulus
+R2
+R14
+R3
+R4
+DEx4 work 15 counterdown4_tb 0 22 YOkV:QIlIlMceAc3aZB_A0
+!i122 2
+l16
+L8 90
+VIG_[lRz0WXPb`KSReP88g2
+!s100 f[zVIk3Ile@VL6@M]Bnh82
+R7
+32
+R8
+!i10b 1
+R9
+R18
+Z19 !s107 C:/Users/Legion/Desktop/MiniProjeto/CounterDown4_Tb.vhd|
+!i113 1
+R12
+R13
