@@ -1,0 +1,8 @@
+%Ex1 a), parte 2.2
+
+clear all;
+
+dado = 1:6; 
+p = ones(1,6)/6;
+
+stem(dado,p),xlabel('x'),ylabel('px(x)')
