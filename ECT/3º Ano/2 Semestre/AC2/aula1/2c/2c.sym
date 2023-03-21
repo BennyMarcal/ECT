@@ -1,0 +1,19 @@
+GAS LISTING 2c.s 			page 1
+
+
+DEFINED SYMBOLS
+                2c.s:2      .data:0000000000000000 str
+                2c.s:3      .data:000000000000002c str1
+                2c.s:4      .data:0000000000000049 str2
+                2c.s:5      .data:000000000000005c str3
+                2c.s:6      .data:0000000000000070 str4
+                2c.s:7      .data:000000000000008f str5
+                2c.s:8      *ABS*:0000000000000005 readInt
+                2c.s:9      *ABS*:0000000000000006 printInt
+                2c.s:10     *ABS*:0000000000000007 printInt10
+                2c.s:11     *ABS*:0000000000000008 printStr
+                2c.s:14     .text:0000000000000000 main
+                2c.s:15     .text:0000000000000000 while
+                2c.s:76     .text:00000000000000d4 end
+
+NO UNDEFINED SYMBOLS

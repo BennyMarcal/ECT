@@ -1,0 +1,12 @@
+GAS LISTING 2a.s 			page 1
+
+
+DEFINED SYMBOLS
+                2a.s:2      *ABS*:0000000000000002 getChar
+                2a.s:3      *ABS*:0000000000000003 putChar
+                2a.s:7      .text:0000000000000000 main
+                2a.s:8      .text:0000000000000000 do
+                2a.s:17     .text:0000000000000018 while
+                2a.s:20     .text:000000000000002c fim
+
+NO UNDEFINED SYMBOLS

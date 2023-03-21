@@ -1,0 +1,16 @@
+GAS LISTING 2.s 			page 1
+
+
+DEFINED SYMBOLS
+                 2.s:2      *ABS*:0000000000000002 getChar
+                 2.s:3      *ABS*:0000000000000003 putChar
+                 2.s:4      *ABS*:0000000000000006 printInt
+                 2.s:5      *ABS*:000000000000000b readCoreTimer
+                 2.s:6      *ABS*:000000000000000c resetCoreTimer
+                 2.s:10     .text:0000000000000000 main
+                 2.s:16     .text:0000000000000010 while
+                 2.s:42     .text:000000000000005c delay
+                 2.s:35     .text:0000000000000048 end
+                 2.s:45     .text:0000000000000064 whilew
+
+NO UNDEFINED SYMBOLS

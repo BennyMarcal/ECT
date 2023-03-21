@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>three.js example 01 &mdash; Basic skeleton</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style>
+		body {
+			background-color: #000000;
+			margin: 0px;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="https://threejs.org/build/three.js"></script>
+	<script type="text/javascript">
+
+		function addCubeToScene(l, x, y, z, rgb, scene){
+			var geometry = new THREE.BoxBufferGeometry(l, l, l);
+			var material = new THREE.MeshLambertMaterial({color: rgb});
+			var cube = new THREE.Mesh(geometry, material);
+
+			cube.position.x = x;
+			cube.position.y = y;
+			cube.position.z = z;
+
+			scene.add(cube);
+		}
+
+		function addSquareWithHoleToScene(l, x, y, z, rgb, scene) {
+			// Create outer square shape
+			const outerShape = new THREE.Shape();
+			outerShape.moveTo(-l / 2, -l / 2);
+			outerShape.lineTo(-l / 2, l / 2);
+			outerShape.lineTo(l / 2, l / 2);
+			outerShape.lineTo(l / 2, -l / 2);
+			outerShape.lineTo(-l / 2, -l / 2);
+
+			// Create hole shape
+			const holePath = new THREE.Path();
+			holePath.moveTo(-l / 4, -l / 4);
+			holePath.lineTo(-l / 4, l / 4);
+			holePath.lineTo(l / 4, l / 4);
+			holePath.lineTo(l / 4, -l / 4);
+			holePath.lineTo(-l / 4, -l / 4);
+
+			// Subtract hole from outer shape
+			outerShape.holes.push(holePath);
+
+			// Create geometry and mesh
+			const extrudeSettings = {
+				depth: l,
+				bevelEnabled: false,
+			};
+			const geometry = new THREE.ExtrudeBufferGeometry(outerShape, extrudeSettings);
+			const material = new THREE.MeshLambertMaterial({ color: rgb });
+			const mesh = new THREE.Mesh(geometry, material);
+
+			mesh.position.x = x;
+			mesh.position.y = y;
+			mesh.position.z = z;
+
+			scene.add(mesh);
+		}
+
+		function init() {
+
+			var scene = new THREE.Scene(); 
+
+			const pointLight = new THREE.PointLight(0xff00ff, 1);
+			pointLight.position.set(2, 4, 5);
+			scene.add(pointLight);
+
+			addCubeToScene(1, 0, 0, 0, 0xffffff, scene);
+
+			var camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 1, 100);
+
+			camera.position.x = 10;
+			camera.position.z = 10;
+			camera.position.y = 10;
+
+			camera.lookAt(scene.position);
+
+			scene.add(camera)
+
+			var renderer = new THREE.WebGLRenderer({ antialias: true });
+
+			renderer.setClearColor(new THREE.Color(0x000000));
+
+			renderer.setPixelRatio(window.devicePixelRatio);
+
+			renderer.setSize(window.innerWidth, window.innerHeight);
+
+			addSquareWithHoleToScene(1, 2, 0, 0, 0xff0000, scene);
+			
+			document.body.appendChild(renderer.domElement);
+
+			renderer.render(scene, camera);
+
+			
+		}
+
+		window.onload = init;
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+REGULAR VERSION (PT):
+
+Visibilidade do estado do sistema: O website poderia beneficiar de fornecer feedback mais claro aos utilizadores sobre o estado das suas ações, por exemplo, usando indicadores de carregamento ou barras de progresso quando necessário.
+
+Correspondência entre o sistema e o mundo real: O website utiliza terminologia e conceitos familiares ao seu público-alvo, como "horários" e "tarifas".
+
+Controlo e liberdade do utilizador: O website fornece aos utilizadores formas claras de desfazer quaisquer ações que tomem, como a capacidade de voltar a páginas anteriores ou alterar os parâmetros de pesquisa.
+
+Consistência e padrões: O website segue padrões de design comuns e convenções de plataforma, como usar um menu de navegação no topo da página e fornecer uma barra de pesquisa no cabeçalho.
+
+Prevenção de erros: O website poderia beneficiar de fornecer validação em tempo real dos campos do formulário e oferecer sugestões para corrigir erros, como quando um utilizador insere um formato de data inválido.
+
+Reconhecimento em vez de memorização: O website poderia beneficiar de tornar mais fácil para os utilizadores encontrar informações e concluir tarefas sem precisar lembrar-se de etapas ou informações complexas, como fornecendo atalhos para recursos comumente usados.
+
+Flexibilidade e eficiência de uso: O website fornece aos utilizadores a capacidade de personalizar os seus parâmetros de pesquisa e visualizar informações em diferentes formatos, como exibindo horários em uma tabela ou um formato gráfico.
+
+Design estético e minimalista: O website tem um design limpo e sem poluição visual, com foco nas informações e ações mais importantes para os utilizadores.
+
+Ajuda aos utilizadores a reconhecer, diagnosticar e se recuperar de erros: O website poderia beneficiar de fornecer mensagens de erro mais claras e orientação aos utilizadores para ajudá-los a corrigir erros e recuperar de quaisquer problemas que encontrem.
+
+Ajuda e documentação: O website fornece ajuda clara e fácil de aceder e documentação aos utilizadores, como fornecer uma página "Contacto" e uma secção de perguntas frequentes (FAQ).
+
+ENGLISH VERSION:
+
+Visibility of system status: The website could benefit from providing clearer feedback to users about the status of their actions, such as by using loading indicators or progress bars when necessary.
+
+Match between system and the real world: The website uses terminology and concepts that are familiar to its target audience, such as "timetables" and "fares".
+
+User control and freedom: The website provides users with clear ways to undo any actions they take, such as the ability to go back to previous pages or change search parameters.
+
+Consistency and standards: The website follows common design patterns and platform conventions, such as using a navigation menu at the top of the page and providing a search bar in the header.
+
+Error prevention: The website could benefit from providing real-time validation of form fields and offering suggestions for correcting errors, such as when a user enters an invalid date format.
+
+Recognition rather than recall: The website could benefit from making it easier for users to find information and complete tasks without having to remember complex steps or information, such as by providing shortcuts to commonly used features.
+
+Flexibility and efficiency of use: The website provides users with the ability to customize their search parameters and to view information in different formats, such as by displaying timetables in a table or a graphical format.
+
+Aesthetic and minimalist design: The website has a clean and uncluttered design, with a focus on the most important information and actions for users.
+
+Help users recognize, diagnose, and recover from errors: The website could benefit from providing clearer error messages and guidance to users to help them correct errors and recover from any issues they encounter.
+
+Help and documentation: The website provides clear and easy-to-access help and documentation to users, such as by providing a "Contact Us" page and an FAQ section.

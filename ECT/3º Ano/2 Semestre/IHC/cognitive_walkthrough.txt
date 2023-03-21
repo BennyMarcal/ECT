@@ -1,0 +1,85 @@
+REGULAR VERSION (PT):
+
+Tarefa 1: Um usuário deseja encontrar horários de trem para uma rota específica.
+
+O usuário tentará alcançar a tarefa correta?
+Sim, o usuário provavelmente procurará horários de trem se quiser viajar de um local para outro.
+
+O usuário notará que a ação correta está disponível?
+Sim, o usuário deve notar o link "Horários" no menu superior, que indicaria que eles podem encontrar horários de trem neste site.
+
+O usuário associará a ação correta com o efeito que está tentando alcançar?
+Sim, o usuário deve associar o link "Horários" com o efeito que está tentando alcançar, que é encontrar horários de trem para uma rota específica.
+
+Se a ação correta for realizada, o usuário verá que o progresso está sendo feito?
+Sim, se o usuário clicar no link "Horários", ele deverá ser levado a uma página onde poderá inserir suas localizações de partida e chegada para ver horários de trem para sua rota desejada, indicando que o progresso está sendo feito em direção ao alcance de seu objetivo.
+
+Se a ação correta for realizada, o usuário saberá que está se aproximando de seu objetivo?
+Sim, se o usuário inserir suas localizações de partida e chegada e ver horários de trem para sua rota desejada, ele deverá saber que está se aproximando de seu objetivo.
+
+Se uma ação incorreta for realizada, o usuário poderá se recuperar do erro?
+Sim, se o usuário clicar em um link que não o levar às informações necessárias, ele poderá usar o botão voltar ou o menu de navegação para tentar um caminho diferente para encontrar as informações de que precisa.
+
+ENGLISH VERSION:
+
+1-Task: A user wants to find train schedules for a specific route.
+Will the user try to achieve the right task?
+Yes, the user is likely to look for train schedules if they want to travel from one location to another.
+
+Will the user notice that the correct action is available?
+Yes, the user should notice the "Timetables" link in the header menu, which would indicate that they can find train schedules on this website.
+
+Will the user associate the correct action with the effect they are trying to achieve?
+Yes, the user should associate the "Timetables" link with the effect they are trying to achieve, which is to find train schedules for a specific route.
+
+If the correct action is performed, will the user see that progress is being made?
+Yes, if the user clicks on the "Timetables" link, they should be taken to a page where they can enter their starting and ending locations to view train schedules for their desired route, indicating that progress is being made towards achieving their goal.
+
+If the correct action is performed, will the user know that they are getting closer to their goal?
+Yes, if the user enters their starting and ending locations and sees train schedules for their desired route, they should know that they are getting closer to achieving their goal.
+
+If an incorrect action is performed, will the user be able to recover from the error?
+Yes, if the user clicks on a link that doesn't take them to the information they need, they can use the back button or the navigation menu to try a different path to find the information they need.
+
+REGULAR VERSION (PT):
+
+Tarefa 2: Um usuário deseja comprar um bilhete de trem para uma rota específica.
+
+O usuário tentará alcançar a tarefa correta?
+Sim, o usuário provavelmente procurará informações sobre a compra de bilhetes de trem se quiser viajar em uma rota específica.
+
+O usuário notará que a ação correta está disponível?
+Sim, o usuário deve notar o link "Comprar" no menu superior, que indicaria que ele pode comprar bilhetes de trem neste site.
+
+O usuário associará a ação correta com o efeito que está tentando alcançar?
+Sim, o usuário deve associar o link "Comprar" com o efeito que está tentando alcançar, que é comprar um bilhete de trem para uma rota específica.
+
+Se a ação correta for realizada, o usuário verá que o progresso está sendo feito?
+Sim, se o usuário clicar no link "Comprar", ele deverá ser levado a uma página onde poderá inserir suas localizações de partida e chegada, datas e horários para procurar bilhetes de trem disponíveis para sua rota desejada, indicando que o progresso está sendo feito em direção ao alcance de seu objetivo.
+
+Se a ação correta for realizada, o usuário saberá que está se aproximando de seu objetivo?
+Sim, se o usuário inserir suas localizações de partida e chegada, datas e horários e ver bilhetes de trem disponíveis para sua rota desejada, ele deverá saber que está se aproximando de seu objetivo.
+
+Se uma ação incorreta for realizada, o usuário poderá recuperar o erro?
+Sim, se o usuário clicar em um link que não o leve à informação que precisa, poderá usar o botão de voltar ou o menu de navegação para tentar um caminho diferente para encontrar a informação que precisa.
+
+ENGLISH VERSION:
+
+2-Task: A user wants to buy a train ticket for a specific route.
+Will the user try to achieve the right task?
+Yes, the user is likely to look for information about buying train tickets if they want to travel on a specific route.
+
+Will the user notice that the correct action is available?
+Yes, the user should notice the "Buy" link in the header menu, which would indicate that they can buy train tickets on this website.
+
+Will the user associate the correct action with the effect they are trying to achieve?
+Yes, the user should associate the "Buy" link with the effect they are trying to achieve, which is to buy a train ticket for a specific route.
+
+If the correct action is performed, will the user see that progress is being made?
+Yes, if the user clicks on the "Buy" link, they should be taken to a page where they can enter their starting and ending locations, dates, and times to search for available train tickets for their desired route, indicating that progress is being made towards achieving their goal.
+
+If the correct action is performed, will the user know that they are getting closer to their goal?
+Yes, if the user enters their starting and ending locations, dates, and times and sees available train tickets for their desired route, they should know that they are getting closer to achieving their goal.
+
+If an incorrect action is performed, will the user be able to recover from the error?
+Yes, if the user clicks on a link that doesn't take them to the information they need, they can use the back button or the navigation menu to try a different path to find the information they need.

@@ -1,0 +1,14 @@
+GAS LISTING 2b.s 			page 1
+
+
+DEFINED SYMBOLS
+                2b.s:2      *ABS*:0000000000000001 inkey
+                2b.s:3      *ABS*:0000000000000003 putChar
+                2b.s:7      .text:0000000000000000 main
+                2b.s:9      .text:0000000000000000 do
+                2b.s:13     .text:000000000000000c if
+                2b.s:21     .text:0000000000000028 else
+                2b.s:25     .text:0000000000000034 while
+                2b.s:27     .text:0000000000000040 end
+
+NO UNDEFINED SYMBOLS

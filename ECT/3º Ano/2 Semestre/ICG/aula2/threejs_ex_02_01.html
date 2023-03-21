@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--
+
+		threejs_ex_02_01.html
+
+		J. Madeira - March 2022
+
+		Adapted / simplified from the Learning Three.js book examples
+
+-->
+
+<head>
+
+	<title>three.js example</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<style>
+		body {
+
+			background-color: #ffffff;
+
+			/* To use the complete page */
+
+			margin: 0px;
+
+			overflow: hidden;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Div which will hold the renderer output -->
+
+	<div id="WebGL-output"> </div>
+
+	<!-- The library --- Can be a local version -->
+
+	<script type="text/javascript" src="http://threejs.org/build/three.js"></script>
+
+	<!-- Javascript code that runs the Three.js example -->
+
+	<script type="text/javascript">
+
+		// Once everything is loaded, run this function
+
+		function init() {
+
+			// The SCENE
+
+			var scene = new THREE.Scene();
+
+			// The GROUND plane
+
+			var planeGeometry = new THREE.PlaneGeometry(60, 20);
+			var planeMaterial = new THREE.MeshPhongMaterial({ color: 0xcccccc });
+			var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+
+			// Rotate and position the plane
+
+			plane.rotation.x = -0.5 * Math.PI; // TODO: What happens if you comment out this line of code?
+			plane.position.x = 15;
+			plane.position.y = 0;
+			plane.position.z = 0;
+
+			// Add to the scene
+
+			scene.add(plane);
+
+			// Add coordinate AXIS to the scene
+
+			var axes = new THREE.AxesHelper(20);
+
+			scene.add(axes);
+
+			// A CUBE
+
+			var cubeGeometry = new THREE.BoxBufferGeometry(3, 3, 3);
+			var cubeMaterial = new THREE.MeshPhongMaterial({ color: 0xff0000, wireframe: false });
+			var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+
+			// Position the cube and add it to the scene
+			// TODO: What happens if you comment out the next three lines of code?
+			cube.position.x = -7;
+			cube.position.y = 1.5;
+			cube.position.z = -3;
+
+			scene.add(cube);
+
+			// A SPHERE
+			var sphereGeometry = new THREE.SphereGeometry(3, 12, 12);
+			var sphereMaterial = new THREE.MeshPhongMaterial({ color: 0x7777ff, wireframe: false });
+			var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+
+			// Position the sphere and add it to the scene
+			// TODO: What happens if you comment out the next three lines of code?
+			sphere.position.x = 20;
+			sphere.position.y = 3;
+			sphere.position.z = 5;
+
+			scene.add(sphere);
+
+
+			// ------ my code
+
+			// cylinder
+
+			var cylinderGeometry = new THREE.CylinderGeometry(3, 3, 6, 10);
+			var cylinderMaterial = new THREE.MeshPhongMaterial({ color: 0xffff00, wireframe: false });
+			var cylinder = new THREE.Mesh(cylinderGeometry, cylinderMaterial);
+
+			cylinder.position.x = 0;
+			cylinder.position.y = 3;
+			cylinder.position.z = -3;
+
+			scene.add(cylinder);
+
+			// donut
+
+			var donutGeometry = new THREE.TorusGeometry(4, 1.5, 25, 30);
+			var donutMaterial = new THREE.MeshPhongMaterial({ color: 0xfc46aa, wireframe: false });
+			var donut = new THREE.Mesh(donutGeometry, donutMaterial);
+
+			donut.position.x = 10;
+			donut.position.y = 5;
+			donut.position.z = -2;
+
+			scene.add(donut);
+
+
+			// cone
+
+			var coneGeometry = new THREE.ConeGeometry( 3, 10, 10 , 1);
+			var coneMaterial = new THREE.MeshPhongMaterial( {color: 0x00ff00, wireframe: false } );
+			var cone = new THREE.Mesh( coneGeometry, coneMaterial );
+			
+			cone.position.x = 27;
+			cone.position.y = 5;
+			cone.position.z = -4;
+
+			scene.add(cone);
+
+
+			// 2nd cylinder
+
+			var cylinder2Geometry = new THREE.CylinderGeometry(1, 3, 8, 12);
+			var cylinder2Material = new THREE.MeshPhongMaterial({ color: 0x0000ff, wireframe: false });
+			var cylinder2 = new THREE.Mesh(cylinder2Geometry, cylinder2Material);
+
+			cylinder2.position.x = 35;
+			cylinder2.position.y = 4;
+			cylinder2.position.z = 5;
+
+			scene.add(cylinder2);
+
+			// spotlight
+
+			var spotLight = new THREE.SpotLight(0xffffff);
+			spotLight.position.set(-40, 60, -10);
+			scene.add(spotLight);
+
+			const spotLightHelper = new THREE.SpotLightHelper( spotLight );
+			spotLight.castShadow = true; 
+			scene.add( spotLightHelper );
+
+			// shadow
+
+			plane.receiveShadow = true;
+
+			cone.castShadow = true;
+			cone.receiveShadow = true; 
+
+			cube.castShadow = true;
+			cube.receiveShadow = true;
+
+			sphere.castShadow = true;
+			sphere.receiveShadow = true;
+
+			donut.castShadow = true;
+			donut.receiveShadow = true;
+
+			cylinder.castShadow = true;
+			cylinder.receiveShadow = true;
+
+			cylinder2.castShadow = true;
+			cylinder2.receiveShadow = true;
+
+			
+
+
+			// TODO; What happens if you increase or decrease the radius of the sphere?
+
+			// add the sphere to the scene
+			
+
+			// The CAMERA
+
+			// --- Where the viewer is and how he is looking at the scene
+
+			var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+			// Position the camera
+
+			camera.position.x = -30;
+			camera.position.y = 40;
+			camera.position.z = 30;
+
+			// Point the camera to the center of the scene
+
+			camera.lookAt(scene.position);
+
+			scene.add(camera)
+
+			// The RENDERER --- To display the scene on the Web page
+
+			var renderer = new THREE.WebGLRenderer({ antialias: true });
+
+			renderer.setClearColor(new THREE.Color(0xffffff));
+
+			renderer.setPixelRatio(window.devicePixelRatio);
+
+			renderer.setSize(window.innerWidth, window.innerHeight);
+
+			renderer.shadowMap.enabled = true; 
+
+			// Add the output of the renderer to the html element
+
+			document.getElementById("WebGL-output").appendChild(renderer.domElement);
+
+			// Render the scene
+
+			renderer.render(scene, camera);
+
+			var step = 0;
+			// Update model features and render the scene
+			renderScene();
+
+			function renderScene() {
+				// Rotate the cube around its axes
+				cube.rotation.x += 0.02;
+				cube.rotation.y += 0.02;
+				cube.rotation.z += 0.02;
+
+				donut.rotation.x += 0.02;
+				//donut.rotation.y += 0.02;
+				donut.rotation.z += 0.02;
+
+				//cylinder.rotation.x += 0.02;
+				cylinder.rotation.y += 0.01;
+				//cylinder.rotation.z += 0.02;
+
+			
+
+				step += 0.03;
+				// Bounce the sphere up and down
+				sphere.position.x = 20 + (10 * Math.cos(step));
+				sphere.position.y = 3 + (10 * Math.abs(Math.sin(step)));
+
+				cylinder.position.z = -5 + (12 * Math.abs(Math.sin(step)));
+
+				// Render using requestAnimationFrame
+				requestAnimationFrame(renderScene);
+				renderer.render(scene, camera);
+			
+ 			}
+
+			
+		}
+
+
+
+		window.onload = init
+
+	</script>
+
+</body>
+
+</html>

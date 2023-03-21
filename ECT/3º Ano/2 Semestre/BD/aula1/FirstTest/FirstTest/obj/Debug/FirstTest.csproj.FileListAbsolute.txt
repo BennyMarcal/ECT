@@ -1,0 +1,11 @@
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\bin\Debug\FirstTest.exe.config
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\bin\Debug\FirstTest.exe
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\bin\Debug\FirstTest.pdb
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.csproj.AssemblyReference.cache
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.Form1.resources
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.Properties.Resources.resources
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.csproj.GenerateResource.cache
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.csproj.CoreCompileInputs.cache
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.exe
+C:\Users\benny\Desktop\ECT\3º Ano\2 Semestre\BD\aula1\FirstTest\FirstTest\obj\Debug\FirstTest.pdb
